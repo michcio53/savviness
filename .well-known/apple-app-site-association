@@ -1,14 +1,23 @@
 {
   "appclips": {
-    "apps": ["8C3MRTNM83.com.grupdev.suptefal.Clip"]
+    "apps": [
+      "8C3MRTNM83.com.grupdev.suptefal.Clip"
+    ]
   },
   "applinks": {
     "apps": [],
     "details": [
       {
         "appID": "8C3MRTNM83.com.grupdev.suptefal",
-        "paths": ["*"]
+        "paths": [
+          "*"
+        ]
       }
+    ]
+  },
+  "webcredentials": {
+    "apps": [
+      "8C3MRTNM83.com.grupdev.suptefal"
     ]
   }
 }
