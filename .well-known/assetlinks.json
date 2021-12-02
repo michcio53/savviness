@@ -1,0 +1,5 @@
+[{
+ "relation": ["delegate_permission/common.handle_all_urls"],
+ "target" : { "namespace": "android_app", "package_name": "com.deviniti.poc_tefal",
+        "sha256_cert_fingerprints": ["55:9E:47:51:06:1C:E0:2B:87:F3:EA:71:7A:9F:7C:CF:85:85:26:9D:A8:77:24:D3:FC:4E:89:4B:CE:7F:43:62"] }
+}]
