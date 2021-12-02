@@ -12,7 +12,8 @@
                   "/": "*",
                   "comment": "Matches any URL whose path starts with /help/website/ and instructs the system not to open it as a universal link"
                }
-             ]
+             ],
+             "paths": [ "*"]
            }
        ]
    },
