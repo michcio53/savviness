@@ -3,7 +3,8 @@
     "apps": [],
     "details": [
       {
-        "appID": "8C3MRTNM83.com.grupdev.suptefal.Clip"
+        "appID": "8C3MRTNM83.com.grupdev.suptefal",
+        "paths": ["*"]
       }
     ]
   }
