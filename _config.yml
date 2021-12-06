@@ -21,7 +21,7 @@ author:
   avatar: /assets/img/me.jpg # change with your own avatar
 
 # URL settings
-url: "https://klise.now.sh" #
+url: "https://savviness.dev" #
 baseurl:
 permalink: /:title/
 google_analytics: # leave it blank if not wish
