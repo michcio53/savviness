@@ -264,6 +264,55 @@
   }
 }
 
+// List of posts
+.project-item {
+  padding-top: 5px;
+  padding-bottom: 6px;
+  @extend %clearfix;
+
+  &:not(:first-child) {
+    border-top: 1px solid $light;
+  }
+
+  .project-item-date {
+    min-width: 96px;
+    color: $black;
+    font-weight: 700;
+    padding-right: 10px;
+
+    @include media-query($on-mobile) {
+      font-size: 16px;
+    }
+
+    a {
+      color: $black;
+
+      &:hover,
+      &focus {
+        color: $black;
+      }
+    }
+  }
+
+  .project-item-title {
+    margin: 0;
+    border: 0;
+    padding: 0;
+    font-size: $base-font-size;
+    font-weight: normal;
+    letter-spacing: 0.1px;
+
+    a {
+      color: $text-base-color;
+
+      &:hover,
+      &focus {
+        color: $black;
+      }
+    }
+  }
+}
+
 // Footer
 .footer {
   margin-top: 8em;

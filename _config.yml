@@ -31,6 +31,8 @@ fb_appid:
 collections:
   posts:
     output: true
+  projects:
+    output: true
 
 # Markdown settings
 markdown: kramdown
@@ -45,7 +47,10 @@ defaults:
     values:
       layout: post
       comments: false
-
+  - scope:
+      path: "projects"
+    values:
+      layout: project # overrides previous default layout
 # Jekyll Compose default front matter
 jekyll_compose:
   post_default_front_matter:

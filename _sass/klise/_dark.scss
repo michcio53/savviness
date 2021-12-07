@@ -174,6 +174,34 @@ body[data-theme="dark"] {
     }
   }
 
+  .project-item {
+    &:not(:first-child) {
+      border-color: $dark-light;
+    }
+
+    .project-item-date {
+      color: $dark-white;
+      a {
+        color: $dark-white;
+
+        &:hover,
+        &focus {
+          color: $dark-white;
+        }
+      }
+    }
+    .project-item-title {
+      a {
+        color: $dark-text-base-color;
+
+        &:hover,
+        &focus {
+          color: $dark-white;
+        }
+      }
+    }
+  }
+
   // Post Navigation
   .post-nav {
     border-color: $dark-light;
