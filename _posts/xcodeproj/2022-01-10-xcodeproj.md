@@ -59,6 +59,7 @@ From now on, the `project` variable will be used to perform operations on our ta
 ## Build Configuration
 ### List all configurations
 During a new project configuration, I start my work by configuring the appropriate Configurations that I will then assign to the Schemes.
+
 Our initial state looks like in Figure 1.
 
 {% include image.html url="/assets/img/xcodeproj/fig1.png" description="Figure 1" %}
@@ -131,6 +132,7 @@ In the method itself, we do the following
 - We search for the Native Target to which we will add the configuration - in the case of Flutter configuration it will be the first one on the list - `Runner`
 - We want our new configuration to be available both throughout the project and in Target, so we're adding it in two places. In the `add_build_configuration` method we put our new name and our symbol (which can be `:debug` or `:release`)
 - The next important step is to copy the corresponding `base_configuration_reference` - this is a reference to the `. xcconfig` file. In my project I have three such files - `Release.xcconfig`, `Debug.xcconfig` and `Generated.xcconfig` and they are available for viewing in the `ios/Flutter` folder. In the near future we will only be interested in `Release.xcconfig` and `Debug.xcconfig` as these are the ones we will be assigning to the appropriate configurations.
+
 To find the appropriate `.xcconfig` file I use the `detect` method which will search for a build config that has either `Release` or `Debug` in its name (matching is done by the symbol which will be `:debug` or `:release`)
 - In the last step I plug in `build_settings` for the configuration created in the project and in the Target. This is done by a loop which looks for the name of the base configuration from which we want to take the settings. Then I assign the found settings to the appropriate configuration.
 - the last step in the method is to save our configurations in the project
@@ -182,6 +184,7 @@ Now we can view the saved Scheme in Apple's IDE. In case you had Xcode open, you
 
 
 As you may have noticed when saving Scheme we used the `save_as` method in which we pointed to our project file which may not seem logical. In fact `Runner.xcodeproj` is actually a directory where the real project files are located. 
+
 Soooo, we can see where our Scheme has been saved. If we are in the root directory of our Flutter project we type in the console:
 
 ```bash
@@ -196,8 +199,11 @@ Custom Scheme.xcscheme Runner.xcscheme
 
 ## Conclusion
 I hope this post helped at least a little to introduce you to XcodeProject and encourage you to experiment with it. With this tool you can perform practically any action on your Xcode project. 
+
 As for our script... It can be extended to automatically add build phases, update `Info.plist` or delete old build configs.
+
 To write this article I used the knowledge from the documentation (available in the [Useful links section](#useful-links)), my own trial and error using the tool and an analysis of the files contained in `.xcodeproj` (mainly `project.pbxproj`)
+
 Finally, it's worth mentioning a port of the tool to Dart language which you can find [here](https://pub.dev/packages/xcodeproj). I found this package relatively recently so I mention it at the end.
 
 ## Full code
