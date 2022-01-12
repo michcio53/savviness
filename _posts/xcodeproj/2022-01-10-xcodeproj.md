@@ -147,7 +147,7 @@ Aaand that's it! After executing the script, we can view the effect of our work 
 
 {% include image.html url="/assets/img/xcodeproj/fig2.png" description="Figure 2" %}
 
-## Schemas
+## Schemes
 The next step we can take is to use the generated configurations. In order to do so, we will create a new scheme using code and then assign build configs to appropriate actions. We now add a new piece to the code we created earlier
 
 
