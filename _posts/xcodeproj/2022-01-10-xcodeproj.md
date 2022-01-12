@@ -61,7 +61,7 @@ From now on, the `project` variable will be used to perform operations on our ta
 During a new project configuration, I start my work by configuring the appropriate Configurations that I will then assign to the Schemes.
 Our initial state looks like in Figure 1.
 
-{% include image.html url="{site.url}/assets/img/xcodeproj/fig1.png" description="Figure 1" %}
+{% include image.html url="/assets/img/xcodeproj/fig1.png" description="Figure 1" %}
 
 
 From xcodeproj we can easily get a list of available configurations in the project
@@ -143,7 +143,7 @@ I call the method I wrote earlier specifying respectively:
 
 Aaand that's it! After executing the script, we can view the effect of our work in Xcode.
 
-{% include image.html url="{site.url}/assets/img/xcodeproj/fig2.png" description="Figure 2" %}
+{% include image.html url="/assets/img/xcodeproj/fig2.png" description="Figure 2" %}
 
 ## Schemas
 The next step we can take is to use the generated configurations. In order to do so, we will create a new scheme using code and then assign build configs to appropriate actions. We now add a new piece to the code we created earlier
@@ -176,9 +176,9 @@ scheme.save_as(project_path, new_scheme_name)
 
 Now we can view the saved Scheme in Apple's IDE. In case you had Xcode open, you will have to open it again to refresh the Scheme list.
 
-{% include image.html url="{site.url}/assets/img/xcodeproj/fig3.png" description="Figure 3" %}
+{% include image.html url="/assets/img/xcodeproj/fig3.png" description="Figure 3" %}
 
-{% include image.html url="{site.url}/assets/img/xcodeproj/fig4.png" description="Figure 4" %}
+{% include image.html url="/assets/img/xcodeproj/fig4.png" description="Figure 4" %}
 
 
 As you may have noticed when saving Scheme we used the `save_as` method in which we pointed to our project file which may not seem logical. In fact `Runner.xcodeproj` is actually a directory where the real project files are located. 
