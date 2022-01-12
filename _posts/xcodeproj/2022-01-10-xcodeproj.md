@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Automate your project with Xcodeproj"
+title:  "Automate project creation with Xcodeproj"
 date:   2022-01-12 21:30:00 +0100
 categories: jekyll update
 ---
