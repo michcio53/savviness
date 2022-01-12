@@ -202,7 +202,7 @@ I hope this post helped at least a little to introduce you to XcodeProject and e
 
 As for our script... It can be extended to automatically add build phases, update `Info.plist` or delete old build configs.
 
-To write this article I used the knowledge from the documentation (available in the [Useful links section](#useful-links)), my own trial and error using the tool and an analysis of the files contained in `.xcodeproj` (mainly `project.pbxproj`)
+To write this article I used the knowledge from the documentation (available in the [Useful links section](#useful-links)), my own trial and error using the tool and an analysis of the files contained in `.xcodeproj` (mainly `project.pbxproj`).
 
 Finally, it's worth mentioning a port of the tool to Dart language which you can find [here](https://pub.dev/packages/xcodeproj). I found this package relatively recently so I mention it at the end.
 
